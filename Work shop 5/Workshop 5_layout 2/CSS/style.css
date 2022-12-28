@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    font-family: sans-serif;
+}
+header{
+    background-color:#fbfba8 ;
+    width: 100%;
+    display: flex; 
+}
+.Intro{
+    padding-top: 20vh;
+    padding-left: 10vw;
+    width: 60%;
+    background-color: #e8a6a5;
+    height: 100px;
+    float: left; 
+}
+.Intro h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    color: rgb(7, 7, 7); 
+}
+.Intro p{
+    font-size: 18px;
+    margin-top: 30px;
+    color: rgb(6, 6, 6);
+}
+
+.Wish p{
+   
+    margin-top: 130px; 
+    text-transform: capitalize;
+}
+.button{
+    margin-top: 40px; 
+}
+.button a{
+    background-color: rgb(250, 109, 99);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black; 
+    text-transform: uppercase;
+}
+.button a:hover{
+    background-color: rgb(79, 4, 252);
+}
+.Image{
+    width: 50%;
+}
+.Image img{
+    height: 500px;
+    width: 100%;
+}
+@media (max-width:1254px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:500px){
+    header{
+        
+    }
+    .Wish p{
+     margin-top: 50px;
+}
+   
+}

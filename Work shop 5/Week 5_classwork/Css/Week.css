@@ -1,0 +1,43 @@
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+#main{ 
+    width: 100%;
+    height: 647px; 
+    background-color: #23c614; 
+}  
+#main h1{ 
+    color: rgb(15, 14, 14);  
+    padding-top: 20px;
+    padding-left: 20px; 
+    padding-bottom: 10px; 
+    
+}
+#main .text p{  
+    font-size: 20px;
+    color: white; 
+    font-weight: 500; 
+    padding-left: 20px;  
+    text-align: justify;
+     
+}  
+.text, .img{  
+    width: 50%; 
+    float: left;
+}  
+#main .img img { 
+    width: 90%;
+    height: 580px;  
+    float: left;  
+    margin-right: auto;
+} 
+.button{ 
+    background-color: black;
+    color: aliceblue; 
+    padding: 20px; 
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+}
