@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+ 
+.menu{
+  right: 0;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu i{
+  font-size: 30px;
+  position: fixed;  
+}
+
+.nav{
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  text-align: center;
+  transition: all .5s;
+ }
+ 
+.nav.is-active{
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+  background-color: whitesmoke;
+  
+} 
+
+.menu.is-active{
+  background-color: rgb(4, 4, 4);
+
+}
+
+.menu.is-active i {
+  color: white;
+}
+.navigation{
+  margin-top: 50px;
+}
+.navigation li{
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 0.3s;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation li a{
+  color: rgb(87, 85, 85);
+  font-size: 40px;
+  text-decoration: none;
+  font-family: 'Goblin One', cursive;
+}
+
+.navigation li a img{
+  width: 40%;
+}
+
+.navigation li a:hover{
+  color: black;
+  text-shadow: 0 0 5px red;
+}
+
+
+
+
+
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+.icons li {
+      list-style: none;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+   
+}  
+.icons li a {
+      font-size: 2em;
+      color: blue;
+      margin: 0 10px; 
+      display: inline-block;
+      transition: all 0.3s ease; 
+}
+.icons li a:hover {
+      transform: translateY(-5px);
+}  
+
+
+
+
+  .page4{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: -1;
+  }
+ 
+  .logo{
+    position: fixed;
+    top: 3%;
+    left: 1%;
+    
+  }
+  .logo img{
+    width: 40%;
+    animation: bounce 1s alternate infinite;
+  }
+  @keyframes bounce {
+  
+  0% {
+  
+  transform: translateY(0);
+  }
+  
+  100% {
+  
+  transform: translateY(-15px);
+  }
+  }
+  .heading{
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    font-size: 40px;
+    display: flex;
+   
+}
+
+.heading h1::before{
+  content: attr(data-text);
+  position: absolute;
+  color: aqua;
+  overflow: hidden;
+  animation: animal 3s alternate infinite;
+  
+}
+@keyframes animal{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+
+}
+
+
+.flexbox{
+  justify-content: center;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  height: 50vh;
+  color: white;
+  line-height: 40px;
+  margin-bottom: 10%;
+}
+.flexbox1{
+  width: 100%;
+  height: auto;
+  /* background-color: blue; */
+  justify-content:center;
+  text-align: center;
+}
+.flexbox2{
+  width: 100%;
+  height: auto;
+  /* background-color:green; */
+  justify-content:center;
+  text-align: center;
+}
+.flexbox3{
+  width: 100%;
+  height: auto;
+  /* background-color: yellow; */
+  justify-content:center;
+  text-align: center;
+}
+
+h2{
+  color: red;
+  font-size: 35px;
+ 
+}
+
+p{
+  font-size: 20px;
+}
+
+
+.footer{
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  background: url(/home.jpg);
+  background-size:cover;
+}
+
+.icon1 {
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+ 
+}
+.icon1 li {
+      list-style: none;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+}  
+.icon1 li a {
+      font-size: 2em;
+      color: white;
+      margin: 0 10px; 
+      display: inline-block;
+      transition: all 0.3s ease; 
+}
+.icon1 li a:hover {
+      transform: translateY(-5px);
+      color: rgb(151, 16, 241);
+}  
+
+
+
+.box{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+ 
+}
+.box li{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+
+}
+.box li a{
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+}
+
+.box li a:hover{
+  color: red; 
+}
+
+
+.para{
+  justify-content: center;
+  display: flex;
+}
+
+.para p{
+  color: white;
+  font-size: 15px;
+  padding-top: 20px;
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 455px){
+  .navigation li a img{
+    display: none;
+  }
+}
+
+
+@media (max-width: 340px){
+  .nav{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .navigation{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: fixed;
+  }
+  .navigation li a{
+    font-size: 20px;
+  }
+  .icons li a {
+    font-size: 20px;
+    /* position: relative; */
+  }
+  .nav p{
+    font-size: 12px;
+  }
+  }
+
+
+@media (max-width: 230px){
+  .navigation li a {
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  .icons{
+    display: none;
+  }
+  .nav p{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 950px){
+
+  .flexbox1 h2, .flexbox2 h2, .flexbox3 h2{
+    font-size: 22px;
+    
+  }
+  .flexbox1 p, .flexbox2 p, .flexbox3 p{
+    font-size: 15px;
+    
+}
+
+}
+
+
+
+@media  (max-width: 700px){
+  .flexbox{
+    flex-direction: column;
+  }
+  .heading h1{
+    font-size: 50px;
+  }
+  .footer{
+    background-image: none;
+    background-color: blue;
+  }
+  .icon1{
+    font-size: 12px;
+  }
+  .box li a {
+    font-size: 16px;
+  }
+  .para p{
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+@media  (max-width: 345px){
+  .logo{
+    display: none;
+  }
+  .heading{
+    margin-top: 70px;
+    position: fixed;
+  }
+  .heading h1{
+    font-size: 30px;
+    color: aqua;
+  }
+  .heading h1::before{
+    display: none;
+  }
+  .footer{
+    height: 25vh;
+  }
+  .box li{
+    margin: 0 5px;
+  }
+  .box li a {
+    font-size: 15px;
+  }
+}
+
+
+
+@media  (max-width: 290px){
+  .box li{
+    margin: 0 2px;
+    /* display: flex; */
+  }
+  .box li a {
+    font-size: 12px;
+    /* display: flex; */
+  }
+  .para p{
+    font-size: 10px;
+  }
+  .icon1{
+    font-size: 10px;
+  }
+  .icon1 li a{
+    margin: 0 7px;
+  }
+}
+
+
+@media  (max-width: 206px){
+  .page4{
+    position: fixed;
+  }
+  .footer{
+    display: none;
+  }
+  .heading {
+    margin-top: 90px;
+  }
+  .heading h1{
+    font-size: 25px;
+  }
+  .flexbox1 h2, .flexbox2 h2, .flexbox3 h2{
+    font-size: 15px;
+    
+  }
+  .flexbox1 p, .flexbox2 p, .flexbox3 p{
+    font-size: 12px;
+}
+}
